@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Отзывы Apple Land (v4, 531 шт.)</title>
+<title>Пікірлер Apple Land (v4, 531 шт.)</title>
 <style>
   :root{--bg:#f6f7fb;--card:#ffffff;--accent:#0a84ff;--muted:#6b7280;--danger:#ef4444;--shadow:0 8px 24px rgba(12,23,52,0.08);--radius:12px;font-family:Inter, system-ui, -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial}
   *{box-sizing:border-box}
@@ -83,46 +83,46 @@
 <div class="logo"><img alt="Apple Land logo" src="photo_2025-10-16_00-36-51.jpg"/></div>
 <div class="titles">
 <h1>Apple Land 💎</h1>
-<p class="lead">Ваши отзывы — наша гордость 🫡</p>
+<p class="lead">Сіздің пікірлеріңіз — біздің мақтанышымыз 🫡</p>
 </div>
 </div>
 <div class="controls">
-<button class="btn" id="toggleModBtn" style="position:fixed; top:20px; right:20px; z-index:2000; padding:10px 16px; font-weight:600;">Панель модерации</button>
+<button class="btn" id="toggleModBtn" style="position:fixed; top:20px; right:20px; z-index:2000; padding:10px 16px; font-weight:600;">Модерация панелі</button>
 </div>
 </header>
 <div class="layout">
 <div>
 <div class="card" id="approvedListWrap">
-<h3>Благодарность клиентов и что говорят о нас: 💬</h3>
+<h3>Клиенттердің алғысы мен біз туралы айтқандары: 💬</h3>
 <div id="approvedList"></div>
-<div class="load-more"><button class="btn" id="loadMoreBtn">Показать ещё</button></div>
+<div class="load-more"><button class="btn" id="loadMoreBtn">Тағы көрсету</button></div>
 </div>
 <div style="height:12px"></div>
 <div class="card">
-<h4>Оставить отзыв</h4>
+<h4>Пікір қалдыру</h4>
 <div class="form-row">
-<input id="nameInput" placeholder="Ваше имя (обязательно)" type="text"/>
+<input id="nameInput" placeholder="Атыңыз (міндетті түрде)" type="text"/>
 <select id="ratingInput">
-<option value="5">⭐️⭐️⭐️⭐️⭐️  Отлично</option>
-<option value="4">⭐️⭐️⭐️⭐️  Хорошо</option>
-<option value="3">⭐️⭐️⭐️  Неплохо</option>
+<option value="5">⭐️⭐️⭐️⭐️⭐️  Өте жақсы</option>
+<option value="4">⭐️⭐️⭐️⭐️  Жақсы</option>
+<option value="3">⭐️⭐️⭐️  Жаман емес</option>
 </select>
-<textarea id="textInput" placeholder="Опишите ваш опыт покупки... (после отправки отзыв попадёт в модерацию)"></textarea>
+<textarea id="textInput" placeholder="Сатып алу тәжірибеңізді сипаттаңыз… (пікір жіберілгеннен кейін модерациядан өтеді)"></textarea>
 <div style="display:flex;gap:8px">
-<button class="btn" id="submitReview">Отправить на модерацию</button>
-<button class="btn ghost" id="clearForm">Очистить</button>
+<button class="btn" id="submitReview">Модерацияға жіберу</button>
+<button class="btn ghost" id="clearForm">Тазалау</button>
 </div>
 </div>
 </div>
 </div>
 <aside>
 <div class="card" id="moderationPanel" style="display:none">
-<h3>Панель модерации</h3>
-<div class="small muted">Вход по паролю. После входа сможешь одобрять/удалять отзывы.</div>
-<input id="modPassword" placeholder="Пароль модератора" style="width:100%;padding:8px;border-radius:8px;border:1px solid #ddd;margin-top:8px" type="password"/>
+<h3>Модерация панелі</h3>
+<div class="small muted">Құпиясөз арқылы кіру. Кіргеннен кейін пікірлерді мақұлдай немесе жоя аласыз.</div>
+<input id="modPassword" placeholder="Модератордың құпиясөзі" style="width:100%;padding:8px;border-radius:8px;border:1px solid #ddd;margin-top:8px" type="password"/>
 <div style="display:flex;gap:8px;margin-top:8px">
-<button class="btn" id="enterMod">Войти</button>
-<button class="btn ghost" id="logoutMod" style="display:none">Выйти</button>
+<button class="btn" id="enterMod">Кіру</button>
+<button class="btn ghost" id="logoutMod" style="display:none">Шығу</button>
 </div>
 <div class="admin-panel" id="adminPanelArea" style="display:none">
 <div style="margin-top:10px">
